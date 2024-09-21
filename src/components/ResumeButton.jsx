@@ -1,10 +1,11 @@
 import React from "react";
+import resume from "../../public/resume.pdf"
 
 const ResumeButton = () => {
   return (
     <div className="flex justify-center ">
       <a
-        href="/resume.pdf" // Assuming the resume is in the public folder
+        href={resume}
         target="_blank"
         rel="noopener noreferrer"
         className="bg-gradient-to-l from-emerald-500 to-emerald-900 flex gap-2 hover:bg-teal-600 text-teal-100 font-semibold py-1 px-3 rounded-3xl shadow-lg transition duration-300 ease-in-out"
