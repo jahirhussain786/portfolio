@@ -3,8 +3,9 @@ import { styles } from "../style";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 import ResumeButton from "./ResumeButton";
+import njhLogo from "../assets/njh-logo-1.png";
 
 const Navbar = () => {
   // Set initial active state to "Home"
@@ -22,7 +23,7 @@ const Navbar = () => {
     };
 
     const observer = new IntersectionObserver(handleScroll, {
-      threshold: 0.5, // Adjust the threshold to trigger intersection based on how much the section is visible
+      threshold: 0.1, // Adjust the threshold to trigger intersection based on how much the section is visible
     });
 
     // Observe each section (assuming the sections have matching IDs with navLinks)
@@ -58,7 +59,7 @@ const Navbar = () => {
           }}
         >
           <img
-            src="../src/assets/njh-logo-1.png"
+            src={njhLogo}
             alt="logo"
             className="w-12 h-12 object-contain mx- mr-8"
           />

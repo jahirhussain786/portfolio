@@ -2,6 +2,7 @@ import React from "react";
 import { SectionWrapper } from "./hoc";
 import TabComponent from "./tabComponent";
 import { styles } from "../style";
+import userImage from "../assets/jahir81.jpg";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
           <div className="basis-full md:basis-[35%] mb-6 md:mb-0 lg:flex lg:items-center lg:text-xl lg:mb-20">
             <img
               className="w-full h-auto rounded-2xl object-cover lg:w-1/3 transition-transform transform hover:scale-95"
-              src="../src/assets/jahir81.jpg"
+              src={userImage}
               alt="user"
             />
             <p className="my-6 py-6 border-b-[1px] border-teal-900 text-wrap text-center text-slate-200 lg:p-8 lg:border-none cursor-pointer transition-transform transform hover:scale-95">
